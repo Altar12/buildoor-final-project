@@ -76,7 +76,7 @@ const Stake: NextPage<StakeProps> = ({ mintAddress, imageSrc }) => {
 
   return (
     <MainLayout>
-      <VStack spacing={7} justify="flex-start" align="flex-start">
+      <VStack spacing={1} justify="flex-start" align="flex-start">
         <Heading color="white" as="h1" size="2xl">
           Level up your buildoor
         </Heading>
@@ -84,7 +84,7 @@ const Stake: NextPage<StakeProps> = ({ mintAddress, imageSrc }) => {
           Stake your buildoor to earn 10 $BLD per day to get access to a
           randomized loot box full of upgrades for your buildoor
         </Text>
-        <HStack spacing={20} alignItems="flex-start">
+        <HStack spacing={10} alignItems="flex-start">
           <VStack align="flex-start" minWidth="200px">
             <Flex direction="column">
               <Image src={imageSrc ?? ""} alt="buildoor nft" zIndex="1" />
@@ -110,7 +110,7 @@ const Stake: NextPage<StakeProps> = ({ mintAddress, imageSrc }) => {
               LEVEL {1}
             </Text>
           </VStack>
-          <VStack alignItems="flex-start" spacing={10}>
+          <VStack alignItems="flex-start" spacing={1}>
             <StakeOptionsDisplay
               nftData={nftData}
               stakeAccount={stakeAccount}

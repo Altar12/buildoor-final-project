@@ -1,8 +1,6 @@
 import type { AppProps } from "next/app"
-import { ChakraProvider } from "@chakra-ui/react"
-
-import { extendTheme } from "@chakra-ui/react"
-import WalletContextProvider from '../components/WalletContextProvider'
+import { ChakraProvider, extendTheme } from "@chakra-ui/react"
+import WalletContextProvider from "../components/WalletContextProvider"
 import { WorkspaceProvider } from "../components/WorkspaceProvider"
 
 const colors = {

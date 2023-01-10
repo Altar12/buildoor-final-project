@@ -56,7 +56,7 @@ export const StakeOptionsDisplay = ({
       !walletAdapter.connected ||
       !walletAdapter.publicKey ||
       !nftTokenAccount ||
-      !workspace.program
+      !workspace.stakingProgram
     ) {
       alert("Please connect your wallet")
       return
@@ -65,7 +65,7 @@ export const StakeOptionsDisplay = ({
     const transaction = new Transaction()
 
     transaction.add(
-      await workspace.program.methods
+      await workspace.stakingProgram.methods
         .stake()
         .accounts({
           nftTokenAccount: nftTokenAccount,
@@ -114,7 +114,7 @@ export const StakeOptionsDisplay = ({
       !walletAdapter.connected ||
       !walletAdapter.publicKey ||
       !nftTokenAccount ||
-      !workspace.program
+      !workspace.stakingProgram
     ) {
       alert("Please connect your wallet")
       return
@@ -128,7 +128,7 @@ export const StakeOptionsDisplay = ({
     const transaction = new Transaction()
 
     transaction.add(
-      await workspace.program.methods
+      await workspace.stakingProgram.methods
         .unstake()
         .accounts({
           nftTokenAccount: nftTokenAccount,
@@ -149,7 +149,7 @@ export const StakeOptionsDisplay = ({
       !walletAdapter.connected ||
       !walletAdapter.publicKey ||
       !nftTokenAccount ||
-      !workspace.program
+      !workspace.stakingProgram
     ) {
       alert("Please connect your wallet")
       return
@@ -163,7 +163,7 @@ export const StakeOptionsDisplay = ({
     const transaction = new Transaction()
 
     transaction.add(
-      await workspace.program.methods
+      await workspace.stakingProgram.methods
         .redeem()
         .accounts({
           nftTokenAccount: nftTokenAccount,

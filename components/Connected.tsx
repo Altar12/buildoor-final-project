@@ -40,7 +40,7 @@ const Connected: FC = () => {
     metaplex
       .candyMachines()
       .findByAddress({
-        address: new PublicKey("Dehb3wTNG8AMaDorfWrrr2HDV2Q8jBuKYBHccUXZZM7U"),
+        address: new PublicKey("AmnnhW5wPkMFwwe7MhF8RuQXUFn5NHMPaNRjyaegB8zR"),
       })
       .run()
       .then((candyMachine) => {
